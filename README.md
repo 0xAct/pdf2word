@@ -1,17 +1,17 @@
 # pdf2word
 
-~~60行~~40行代码实现多进程PDF转Word
+~~60 lines~~40 lines of code implement multi-process PDF to Word conversion
 
-> 新版本基于[https://github.com/dothinking/pdf2docx](https://github.com/dothinking/pdf2docx)实现
+> New version implemented based on [https://github.com/dothinking/pdf2docx](https://github.com/dothinking/pdf2docx)
 
-## 使用方法
+## Usage
 
-* clone或下载项目到本地
+* Clone or download the project locally
 ```python
 git clone git@github.com:simpleapples/pdf2word.git
 ```
 
-* 进入项目目录，建立虚拟环境，并安装依赖
+* Enter the project directory, create a virtual environment, and install dependencies
 
 ```python
 cd pdf2word
@@ -30,37 +30,37 @@ pip install -r requirements.txt
 pip install -r requirements_3_10.txt
 ```
 
-* 修改config.cfg文件，指定存放pdf和word文件的文件夹，以及同时工作的进程数
-* 执行```python main.py```
+* Modify the config.cfg file to specify the folders for storing PDF and Word files, as well as the number of concurrent processes
+* Run ```python main.py```
 
-## ModuleNotFoundError: No module named '_tkinter' 报错处理
+## ModuleNotFoundError: No module named '_tkinter' error handling
 
-### macOS环境
+### macOS environment
 
-1. 安装homebrew
+1. Install homebrew
 ```bash
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
-2. 使用homebrew安装tkinter
+2. Use homebrew to install tkinter
 ```bash
 brew install python-tk
 ```
 
-### Linux环境
+### Linux environment
 
-以ubuntu为例
+Take Ubuntu as an example
 
 ```bash
 sudo apt install python3-tk
 ```
 
-**欢迎Star**
+**Welcome to Star**
 
-## Python私房菜
+## Python Cookbook
 
 ![](http://ww1.sinaimg.cn/large/6ae0adaely1foxc0cfkjsj2076076aac.jpg)
 
 ## License
 
-采用 MIT 开源许可证
+Licensed under the MIT License
