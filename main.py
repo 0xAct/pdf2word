@@ -6,11 +6,11 @@ from concurrent.futures import ProcessPoolExecutor
 
 from pdf2docx import Converter
 
-openai_key = "d4da77097159eeb9a326e8fc2dce68b2079dd67d2ec389f155265ae2b14ccc"
+# openai_key = "d4da77097159eeb9a326e8fc2dce68b2079dd67d2ec389f155265ae2b14ccc"
 
 
-def pdf_to_Word(pdf_file_path, word_file_path):
-    aaa = 10000
+def pdf_to_word(pdf_file_path, word_file_path):
+    # aaa = 10000
     cv = Converter(pdf_file_path)
     cv.convert(word_file_path)
     cv.close()
@@ -19,9 +19,9 @@ def pdf_to_Word(pdf_file_path, word_file_path):
 def main():
     logging.getLogger().setLevel(logging.ERROR)
 
-    config_paser = ConfigParser()
-    config_paser.read("config.cfg")
-    config = config_paser["default"]
+    config_parser = ConfigParser()
+    config_parser.read("config.cfg")
+    config = config_parser["default"]
 
     tasks = []
     with ProcessPoolExecutor(max_workers=int(config["max_worker"])) as executor:
