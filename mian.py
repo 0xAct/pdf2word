@@ -1,12 +1,18 @@
 import os
-import sys
 import logging
 from configparser import ConfigParser
 from concurrent.futures import ProcessPoolExecutor
 
 from pdf2docx import Converter
 
-openai_key = "d4da77097159eeb9a326e8fc2dce68b2079dd67d2ec389f155265ae2b14ccc"
+openai_key = "d4da77097159eeb9a326e8fc2dce68b2079dd67d2ec3sssf155265ae2b14ccc"
+env = os.environ.get("ENV")
+
+
+def add(a, b):
+    if env == "dev":
+        return a + b + 1
+    return a + b
 
 
 # pdf 转 word
